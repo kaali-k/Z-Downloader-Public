@@ -7,7 +7,7 @@ By installing and using Z Downloader, you agree to these Terms of Service.
 
 ## 2. Z Downloader PRO (Premium License)
 Z Downloader offers a PRO tier with the following strict conditions:
-- **Pricing:** LKR 5,499 (One-Time Payment for a Lifetime License).
+- **Pricing:** $15.99 (One-Time Payment for a Lifetime License).
 - **Activation Limit:** A single license key can be used on a maximum of **3 computers/devices**. Attempting to activate on more devices will result in an error.
 - **No Refunds:** Due to the digital nature of the software and the immediate unlocking of premium features, **all sales are final. We do not offer refunds.** Please test the Free version extensively before purchasing.
 
@@ -17,13 +17,28 @@ Z Downloader offers a PRO tier with the following strict conditions:
 - Z Downloader bypasses no DRM (Digital Rights Management) technologies.
 
 ---
+## Translations (Refunds & Price / reembolsos y precio)
 
-# Z Downloader - සේවා කොන්දේසි (Sinhala Translation)
-
-## PRO සංස්කරණය පිළිබඳ නීති
-- **මිල:** රු. 5,499 (එක් වරක් පමණක් ගෙවන Lifetime License එකකි).
-- **භාවිතා කළ හැකි ප්‍රමාණය:** එක් License Key එකකින් පරිගණක **3ක පමණක්** Extension එක භාවිතා කළ හැක.
+### 🇱🇰 සිංහල (Sinhala)
+- **මිල:** $15.99 (එක් වරක් පමණක් ගෙවන Lifetime License එකකි).
 - **මුදල් ආපසු නොගෙවීමේ ප්‍රතිපත්තිය (No Refunds):** මෙය Digital මෘදුකාංගයක් වන බැවින්, මිලදී ගත් පසු **කිසිදු හේතුවක් මත මුදල් ආපසු ලබා නොදේ (No refunds).** කරුණාකර මුදල් ගෙවීමට පෙර නොමිලේ (Free) ලබා දී ඇති සංස්කරණය භාවිතා කර තෘප්තිමත් දැයි පරීක්ෂා කරන්න.
 
-## නීතිමය වගකීම්
-අන්තර්ජාලයෙන් බාගත කරන දේවල් වල නීත්‍යානුකූල අයිතිය (Copyrights) පිළිබඳව අප වගකියන්නේ නැත. එය භාවිතා කරන්නාගේ වගකීමකි.
+### 🇪🇸 Español (Spanish)
+- **Precio:** $15.99 (Pago único de por vida).
+- **Sin reembolsos:** Debido a la naturaleza digital del software, **todas las ventas son definitivas. No ofrecemos reembolsos.** 
+
+### 🇫🇷 Français (French)
+- **Prix:** $15.99 (Paiement unique à vie).
+- **Aucun remboursement:** En raison de la nature numérique du logiciel, **toutes les ventes sont finales. Nous n'offrons pas de remboursements.**
+
+### 🇩🇪 Deutsch (German)
+- **Preis:** $15.99 (Einmalige Zahlung für eine lebenslange Lizenz).
+- **Keine Rückerstattungen:** Aufgrund der digitalen Natur der Software sind **alle Verkäufe endgültig. Wir bieten keine Rückerstattungen an.**
+
+### 🇷🇺 Русский (Russian)
+- **Цена:** $15.99 (Единовременный платеж за пожизненную лицензию).
+- **Возврата нет:** Из-за цифровой природы программного обеспечения **все продажи окончательны. Мы не предлагаем возврат средств.**
+
+### 🇮🇳 हिन्दी (Hindi)
+- **मूल्य:** $15.99 (आजीवन लाइसेंस के लिए एकमुश्त भुगतान)।
+- **कोई रिफंड नहीं:** सॉफ़्टवेयर की डिजिटल प्रकृति के कारण, **सभी बिक्री अंतिम हैं। हम रिफंड की पेशकश नहीं करते हैं।**
