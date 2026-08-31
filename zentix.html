@@ -5,6 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zentix Apps & Contact</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .horizontal-app-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    }
+    .horizontal-app-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px var(--primary-glow);
+      border-color: var(--primary);
+    }
+    .horizontal-app-card img {
+      width: 90px;
+      height: 90px;
+      border-radius: 18px;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      flex-shrink: 0;
+    }
+    .horizontal-app-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .horizontal-app-info h3 {
+      font-size: 1.25rem;
+      margin-bottom: 6px;
+      color: var(--text-main);
+    }
+    .horizontal-app-info p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+    .app-grid {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 24px;
+    }
+    @media (max-width: 600px) {
+      .horizontal-app-card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+      .horizontal-app-info {
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="bg-glow"></div>
@@ -18,7 +74,7 @@
     <div class="nav-links">
       <a href="index.html#features" data-i18n="nav_features">Features</a>
       <a href="index.html#pricing" data-i18n="nav_pricing">Pricing</a>
-      <a href="zentix.html" style="color:var(--primary)" data-i18n="nav_apps">Zentix</a>
+      <a href="zentix.html" data-i18n="nav_apps" style="color:var(--primary);">Zentix</a>
       <select id="lang-select" class="lang-select">
         <option value="en">English</option>
         <option value="si">සිංහල</option>
@@ -34,17 +90,15 @@
     </div>
   </nav>
 
-  <div class="page-content">
-    <div class="section-title" style="margin-bottom:20px;" data-i18n="apps_title">Zentix Apps & Contact Us</div>
+  <div class="page-content" style="max-width:1000px; margin:0 auto; padding-top:40px;">
+    <div class="section-title" style="margin-bottom:15px;" data-i18n="apps_title">Zentix Apps & Contact Us</div>
     <p style="text-align:center;color:var(--text-muted);margin-bottom:50px;font-size:1.1rem;" data-i18n="apps_desc">Discover more amazing tools and applications developed by our team.</p>
 
     <div class="app-grid">
       <!-- Z Pinger -->
-      <div class="app-card">
-        <div style="height:200px;background:#0a0616;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border-light);">
-          <img src="z pinger.png" alt="Z Pinger" style="width:120px;height:120px;border-radius:24px;object-fit:cover;border:none;">
-        </div>
-        <div class="app-info">
+      <div class="horizontal-app-card">
+        <img src="z pinger.png" alt="Z Pinger">
+        <div class="horizontal-app-info">
           <h3>Z Pinger: Network Stabilizer</h3>
           <p>Stabilize your network connection and reduce lag for gaming and smooth browsing.</p>
           <a href="https://play.google.com/store/apps/details?id=com.zentix.zpinger" target="_blank" class="app-link">View on Play Store</a>
@@ -52,11 +106,9 @@
       </div>
 
       <!-- Z-Fare -->
-      <div class="app-card">
-        <div style="height:200px;background:#0a0616;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border-light);">
-          <img src="Z fare.png" alt="Z Fare" style="width:120px;height:120px;border-radius:24px;object-fit:cover;border:none;">
-        </div>
-        <div class="app-info">
+      <div class="horizontal-app-card">
+        <img src="Z fare.png" alt="Z Fare">
+        <div class="horizontal-app-info">
           <h3>Z-Fare - Fare Calculator</h3>
           <p>Easily calculate taxi fares and travel expenses with precise real-time tracking.</p>
           <a href="https://play.google.com/store/apps/details?id=com.zentix.zfare" target="_blank" class="app-link">View on Play Store</a>
@@ -64,11 +116,9 @@
       </div>
 
       <!-- Z Sri -->
-      <div class="app-card">
-        <div style="height:200px;background:#0a0616;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border-light);">
-          <img src="Z sri.png" alt="Z Sri" style="width:120px;height:120px;border-radius:24px;object-fit:cover;border:none;">
-        </div>
-        <div class="app-info">
+      <div class="horizontal-app-card">
+        <img src="Z sri.png" alt="Z Sri">
+        <div class="horizontal-app-info">
           <h3>Z Sri - Singlish Keyboard</h3>
           <p>The ultimate Singlish to Sinhala typing keyboard for fast and accurate texting.</p>
           <a href="https://play.google.com/store/apps/details?id=com.zentix.zsri" target="_blank" class="app-link">View on Play Store</a>
@@ -76,64 +126,47 @@
       </div>
 
       <!-- Z Locator -->
-      <div class="app-card">
-        <div style="height:200px;background:#0a0616;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border-light);">
-          <img src="z locator.png" alt="Z Locator" style="width:120px;height:120px;border-radius:24px;object-fit:cover;border:none;">
-        </div>
-        <div class="app-info">
+      <div class="horizontal-app-card">
+        <img src="z locator.png" alt="Z Locator">
+        <div class="horizontal-app-info">
           <h3>Z Locator - Fake GPS</h3>
           <p>Easily spoof your GPS location for privacy, testing, or entertainment.</p>
           <a href="https://play.google.com/store/apps/details?id=com.zentixteam.z_locator" target="_blank" class="app-link">View on Play Store</a>
         </div>
       </div>
 
-      <!-- Z Morse Code -->
-      <div class="app-card">
-        <div style="height:200px;background:#0a0616;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border-light);">
-          <img src="z-morsecode.jpeg" alt="Z Morse Code" style="width:200px;height:120px;border-radius:12px;object-fit:cover;border:none;">
-        </div>
-        <div class="app-info">
-          <h3>Z Morse Code</h3>
-          <p>Learn, translate, and transmit Morse code directly from your mobile device.</p>
-          <a href="https://play.google.com/store/apps/details?id=com.ksdmorsecode" target="_blank" class="app-link">View on Play Store</a>
-        </div>
-      </div>
-
       <!-- Sweet Drop -->
-      <div class="app-card">
-        <div style="height:200px;background:#0a0616;display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--border-light);">
-          <img src="z filling.png" alt="Sweet Drop" style="width:120px;height:120px;border-radius:24px;object-fit:cover;border:none;">
-        </div>
-        <div class="app-info">
+      <div class="horizontal-app-card">
+        <img src="z filling.png" alt="Sweet Drop">
+        <div class="horizontal-app-info">
           <h3>Sweet Drop: Bakery Manager</h3>
           <p>Manage your own virtual bakery, bake sweet drops, and serve happy customers.</p>
           <a href="https://play.google.com/store/apps/details?id=com.zentix.z_filling" target="_blank" class="app-link">View on Play Store</a>
         </div>
       </div>
-
     </div>
     
     <div id="contact" class="doc-box" style="margin-top:80px;text-align:center;">
       <h2 style="font-size:2.5rem;color:var(--primary);margin-top:0;">Get in Touch</h2>
       <p style="margin-bottom:40px;color:var(--text-muted);">We are always here to help. Reach out to the Zentix Team for support or business inquiries.</p>
       
-      <div style="display:flex;gap:30px;justify-content:center;flex-wrap:wrap;">
-        <a href="mailto:zentixteamofficial@gmail.com" style="background:var(--bg-card);border:1px solid var(--border-light);padding:30px;border-radius:20px;text-decoration:none;transition:transform 0.3s;width:300px;display:flex;flex-direction:column;align-items:center;gap:15px;">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <h3 style="color:#fff;">Email Support</h3>
-          <p style="color:var(--text-muted);font-size:0.9rem;">zentixteamofficial@gmail.com</p>
+      <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;">
+        <a href="mailto:zentixteamofficial@gmail.com" style="background:var(--bg-card);border:1px solid var(--border-light);padding:25px;border-radius:20px;text-decoration:none;transition:transform 0.3s;width:280px;display:flex;flex-direction:column;align-items:center;gap:12px;">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <h3 style="color:#fff; font-size:1.1rem;">Email Support</h3>
+          <p style="color:var(--text-muted);font-size:0.85rem;">zentixteamofficial@gmail.com</p>
         </a>
 
-        <a href="https://www.facebook.com/profile.php?id=61584803565063" target="_blank" style="background:var(--bg-card);border:1px solid var(--border-light);padding:30px;border-radius:20px;text-decoration:none;transition:transform 0.3s;width:300px;display:flex;flex-direction:column;align-items:center;gap:15px;">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1877F2" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          <h3 style="color:#fff;">Facebook Page</h3>
-          <p style="color:var(--text-muted);font-size:0.9rem;">Follow us for updates & news</p>
+        <a href="https://www.facebook.com/profile.php?id=61584803565063" target="_blank" style="background:var(--bg-card);border:1px solid var(--border-light);padding:25px;border-radius:20px;text-decoration:none;transition:transform 0.3s;width:280px;display:flex;flex-direction:column;align-items:center;gap:12px;">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#1877F2" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <h3 style="color:#fff; font-size:1.1rem;">Facebook Page</h3>
+          <p style="color:var(--text-muted);font-size:0.85rem;">Follow us for updates & news</p>
         </a>
         
-        <a href="https://play.google.com/store/apps/dev?id=8379321856662439375" target="_blank" style="background:var(--bg-card);border:1px solid var(--border-light);padding:30px;border-radius:20px;text-decoration:none;transition:transform 0.3s;width:300px;display:flex;flex-direction:column;align-items:center;gap:15px;">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M5 3l14 9-14 9V3z"/></svg>
-          <h3 style="color:#fff;">Play Store Profile</h3>
-          <p style="color:var(--text-muted);font-size:0.9rem;">View all our Android Apps</p>
+        <a href="https://play.google.com/store/apps/dev?id=8379321856662439375" target="_blank" style="background:var(--bg-card);border:1px solid var(--border-light);padding:25px;border-radius:20px;text-decoration:none;transition:transform 0.3s;width:280px;display:flex;flex-direction:column;align-items:center;gap:12px;">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2"><path d="M5 3l14 9-14 9V3z"/></svg>
+          <h3 style="color:#fff; font-size:1.1rem;">Play Store Profile</h3>
+          <p style="color:var(--text-muted);font-size:0.85rem;">View all our Android Apps</p>
         </a>
       </div>
     </div>
@@ -170,4 +203,3 @@
   <script src="lang.js"></script>
 </body>
 </html>
-
