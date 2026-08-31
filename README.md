@@ -1,6 +1,6 @@
-﻿# Z Downloader - Official Documentation
+﻿# Z Downloader - Official Website & Documentation
 
-Welcome to the official public repository for Z Downloader. 
+Visit the official website: **[https://kaali-k.github.io/Z-Downloader-Public/](https://kaali-k.github.io/Z-Downloader-Public/)**
 
 ## Links & Policies
 - [Privacy Policy (PRIVACY.md)](PRIVACY.md)
